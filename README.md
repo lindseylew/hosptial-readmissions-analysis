@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-Hospital readmissions are an important healthcare quality metric and are closely monitored through the Centers for Medicare & Medicaid Services (CMS) Hospital Readmissions Reduction Program (HRRP). Hospitals with excess readmissions for certain condidions may face financial penalties.
+Hospital readmissions are an important healthcare quality metric and are closely monitored through the Centers for Medicare & Medicaid Services (CMS) Hospital Readmissions Reduction Program (HRRP). Hospitals with excess readmissions for certain conditions may face financial penalties.
 
 This project analyzes HRRP performance data to identify patterns in readmission outcomes across hospitals, states and medical conditions. The goal is to uncover potential opportunities for quality improvement and support data-driven decision-making.
 
@@ -23,9 +23,9 @@ Without a clear understanding of performance patterns, organizations may struggl
 
 1. Which HRRP measures have the highest excess readmission ratios?
 2. How does readmission performance vary across states?
-3. Is hospital volume associated with readmisson performance?
+3. Is hospital volume associated with readmission performance?
 4. Which hospitals consistently outperform or underperform expectations?
-5. What areas present the greatest opportunity for quality improvement efforts?
+5. Which hospitals present the greatest opportunities for quality improvement?
 
 ## Dataset
 
@@ -43,7 +43,7 @@ Key Variables:
 
 ## Success Criteria
 
-The analysis will identify meaningful patterns and actionable insights that could help healthcare stakeholders better understand readmission performance and priortize improvement initiatives.
+The analysis will identify meaningful patterns and actionable insights that could help healthcare stakeholders better understand readmission performance and prioritize improvement initiatives.
 
 ## Key Findings
 
@@ -51,7 +51,17 @@ The analysis will identify meaningful patterns and actionable insights that coul
 - State-level variation was relatively modest.
 - Hospital volume showed a weak inverse relationship with excess readmission ratios.
 - Hospital-level variation was substantially larger than variation observed across states or measures.
-- Hospitals reporting four or more measures exhibited average excess readmission ratios ranging from 0.81 to 1.25.
+- Among hospitals reporting four or more HRRP measures, average excess readmission ratios ranged from 0.81 to 1.25.
+
+## Power BI Dashboard
+
+### Executive Overview
+
+Interactive dashboard summarizing readmissiion performance across 2,774 hospitals, 51 states, and six HRRP measures. The dashboard highlights variation across clinical conditions and geographic locations and provides high-level view of overall HRRP performance.
+
+### Hospital Performance
+
+Hospital-level analysis examining the relationship between discharge volume and excess readmission ratios. Includes rankings of top-performing and underperforming hospitals to support quality improvement and benchmarking efforts.
 
 ## Selected Visualizations
 
@@ -83,7 +93,7 @@ Variation within measures was greater than difference between measures.
 
 ## Methodology
 
-The analysis followedthe data analytics lifecycle:
+The analysis followed the data analytics lifecycle:
 
 1. Data Cleaning and Preparation
     - Removed records with missing readmission metrics
@@ -115,7 +125,9 @@ hospital-readmissions-analysis/
 ├── images/
 │   ├── hospital_distribution.png
 │   ├── readmission_ratio_by_measure.png
-│   └── volume_vs_readmission.png
+│   ├── volume_vs_readmission.png
+│   ├── dashboard_overview.png
+│   └── dashboard_hospital_performance.png
 │
 ├── reports/
 │   └── HRRP_Executive_Summary.pdf
@@ -131,7 +143,7 @@ A stakeholder-focused summary of findings and recommendations is available below
 
 ## Recommendations
 
-- Focus quality improvement efforts on hospitals with elevated excess readmissions ratios.
+- Focus quality improvement efforts on hospitals with elevated excess readmission ratios.
 - Investigate operational practices of high-performing hospitals.
 - Benchmark facilities that consistently outperform expectations.
 - Prioritize review of hospitals with ratios substantially above 1.0
